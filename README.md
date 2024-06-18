@@ -7,7 +7,7 @@ Stack yang digunakan
 4. Apache Maven
 5. Apache Kafka
 6. Rabbit MQ
-7. postman --> postman collections
+7. postman --> postman collections : https://github.com/dickanirwansyah/spring-kafka-rabbitmq/blob/master/postman-collections/KAFKA-RABBITMQ.postman_collection.json
 
 sebelum menjalankan aplikasi ini, buat dahulu database. disini saya menggunakan database PostgreSQL
 
