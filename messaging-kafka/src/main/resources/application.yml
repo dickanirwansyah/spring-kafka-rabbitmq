@@ -1,0 +1,36 @@
+spring:
+  application:
+    name: messaging-kafka
+  datasource:
+    url: jdbc:postgresql://localhost:5432/db_message_broker
+    username: dicka
+    password: root
+  jpa:
+    hibernate:
+      ddl-auto: update
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
+  kafka:
+    bootstrap-servers: localhost:9092
+    consumer:
+      group-id: group_id
+      auto-offset-reset: earliest
+      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      value-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+    producer:
+      group-id: crud-group
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer: org.apache.kafka.common.serialization.StringSerializer
+camel:
+  component:
+    kafka:
+      brokers: localhost:9092
+server:
+  port: 9999
+  servlet:
+    context-path: /messaging-kafka
+topic:
+  name: kafka_account_topic
