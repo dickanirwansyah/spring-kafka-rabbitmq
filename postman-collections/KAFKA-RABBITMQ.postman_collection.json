@@ -1,0 +1,297 @@
+{
+	"info": {
+		"_postman_id": "04558f1e-e4c6-4884-97da-11a74cc8709d",
+		"name": "KAFKA-RABBITMQ",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "1887026"
+	},
+	"item": [
+		{
+			"name": "kafka-save",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"code\" : \"AC001\",\n    \"fullname\" : \"dickanirwansyah@gmail.com\",\n    \"email\" : \"dickanirwansyah@gmail.com@gmail.com\",\n    \"phoneNumber\" : \"0889929292\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9999/messaging-kafka/api/kafka/save",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9999",
+					"path": [
+						"messaging-kafka",
+						"api",
+						"kafka",
+						"save"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "kafka-save-camel",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"code\" : \"AC011\",\n    \"fullname\" : \"apache camel testing\",\n    \"email\" : \"apachecamel@gmail.com\",\n    \"phoneNumber\" : \"08782929292\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9999/messaging-kafka/api/camel/kafka/save",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9999",
+					"path": [
+						"messaging-kafka",
+						"api",
+						"camel",
+						"kafka",
+						"save"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "kafka-update",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\" : 10,\n    \"code\" : \"AC002\",\n    \"fullname\" : \"irma khairunnisa\",\n    \"email\" : \"irmakhnisa@gmail.com\",\n    \"phoneNumber\" : \"08899292932\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9999/messaging-kafka/api/kafka/update",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9999",
+					"path": [
+						"messaging-kafka",
+						"api",
+						"kafka",
+						"update"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "kafka-delete",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9999/messaging-kafka/api/kafka/delete/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9999",
+					"path": [
+						"messaging-kafka",
+						"api",
+						"kafka",
+						"delete",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "kafka-find",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9999/messaging-kafka/api/kafka/find/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9999",
+					"path": [
+						"messaging-kafka",
+						"api",
+						"kafka",
+						"find",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "kafka-search",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9999/messaging-kafka/api/kafka/search?page=0&size=10",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9999",
+					"path": [
+						"messaging-kafka",
+						"api",
+						"kafka",
+						"search"
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "0"
+						},
+						{
+							"key": "size",
+							"value": "10"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "rabbitmq-save",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\" : 1,\n    \"code\" : \"AC003\",\n    \"fullname\" : \"joni\",\n    \"email\" : \"joni@gmail.com@gmail.com\",\n    \"phoneNumber\" : \"0879292929\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9999/messaging-kafka/api/rabbitmq/save",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9999",
+					"path": [
+						"messaging-kafka",
+						"api",
+						"rabbitmq",
+						"save"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "rabbitmq-update",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\" : 3,\n    \"code\" : \"AC002\",\n    \"fullname\" : \"dicky\",\n    \"email\" : \"dickyadriansyah@gmail.com@gmail.com\",\n    \"phoneNumber\" : \"088292992\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9999/messaging-kafka/api/rabbitmq/update",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9999",
+					"path": [
+						"messaging-kafka",
+						"api",
+						"rabbitmq",
+						"update"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "rabbitmq-delete",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9999/messaging-kafka/api/rabbitmq/delete/3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9999",
+					"path": [
+						"messaging-kafka",
+						"api",
+						"rabbitmq",
+						"delete",
+						"3"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
