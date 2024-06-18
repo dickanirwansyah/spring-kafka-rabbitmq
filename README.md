@@ -58,6 +58,15 @@ check database apakah datanya berhasil ke insert, jika berhasil ke insert akan s
 
    ![Screenshot from 2024-06-18 17-35-40](https://github.com/dickanirwansyah/spring-kafka-rabbitmq/assets/24214234/fdfb60f2-a28f-448c-8f1b-ac4defca40d5)
 
+3. test delete with postman (kafka / rabbitMQ)
+   berikut ini adalah endpoint untuk delete data account :  http://localhost:9999/messaging-kafka/api/kafka/delete/6
+   
+
+    ![Screenshot from 2024-06-18 17-41-38](https://github.com/dickanirwansyah/spring-kafka-rabbitmq/assets/24214234/39a9a73d-2e65-4a6a-b138-606f1ce11757)
+
+    check database, apakah datanya berhasil ke delete. jika berhasil ke delete data akan terhapus dari database dan akan seperti ini
+
+   ![Screenshot from 2024-06-18 17-43-20](https://github.com/dickanirwansyah/spring-kafka-rabbitmq/assets/24214234/8b01dc4e-bba8-473f-93ef-1de731641049)
 
    
 
